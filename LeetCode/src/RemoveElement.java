@@ -5,8 +5,15 @@
 public class RemoveElement {
 
 	 public int removeElement(int[] nums, int val) {
-	        
-		 return 0;
+		 
+		  int i = 0;
+
+		    for (final int num : nums)
+		      if (num != val)
+		        nums[i++] = num;
+
+		    return i;
+		  
 	 
 	 }
 	
